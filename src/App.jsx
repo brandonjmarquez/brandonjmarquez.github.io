@@ -42,7 +42,7 @@ function App() {
       <SectionNavigator tab={tab} setTab={setTab} />
       <div id="section-container" className="flex flex-row justify-center align-middle w-max h-max translate-x-[-100vw] overflow-scroll">
         <SectionContainer>
-          <Resume />
+          <Resume isCopy={true} />
         </SectionContainer>
         <SectionContainer>
           <AboutMe />
@@ -54,7 +54,7 @@ function App() {
           <Resume />
         </SectionContainer>
         <SectionContainer>
-          <AboutMe />
+          <AboutMe isCopy={true} />
         </SectionContainer>
       </div>
     </>
