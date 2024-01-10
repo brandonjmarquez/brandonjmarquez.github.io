@@ -1,0 +1,64 @@
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './App.css';
+import AboutMe from './tabs/AboutMe';
+import Projects from './tabs/Projects';
+import Resume from './tabs/Resume';
+import SectionContainer from './components/SectionContainer';
+import SectionNavigator from './components/SectionNavigator';
+
+function App() {
+  const navigate = useNavigate();
+  const [tab, setTab] = useState(location.pathname);
+
+  useEffect(() => {
+    const sectionContainer = document.getElementById("section-container");
+    if(location.pathname === "/about-me") {
+      sectionContainer.classList.add("translate-x-[-100vw]");
+    } else if(location.pathname === "/projects") {
+      sectionContainer.classList.add("translate-x-[-200vw]");
+    } else if(location.pathname === "/resume") {
+      sectionContainer.classList.add("translate-x-[-300vw]");
+    }
+  }, []);
+  
+  useEffect(() => {
+    navigate(tab);
+
+    if(tab === "/") setTab("/about-me");
+  }, [tab, navigate]);
+
+  // useEffect(() => {
+  //   const sectionContainer = document.getElementById("section-container");
+  //   if(tab === "/projects") {
+  //     sectionContainer.classList.remove("h-max");
+  //   } else {
+  //     sectionContainer.classList.add("h-[600px]");
+  //   }
+  // }, [tab]);
+
+  return (
+    <>
+      <SectionNavigator tab={tab} setTab={setTab} />
+      <div id="section-container" className="flex flex-row justify-center align-middle w-max h-max translate-x-[-100vw] overflow-scroll">
+        <SectionContainer>
+          <Resume />
+        </SectionContainer>
+        <SectionContainer>
+          <AboutMe />
+        </SectionContainer>
+        <SectionContainer>
+          <Projects />
+        </SectionContainer>
+        <SectionContainer>
+          <Resume />
+        </SectionContainer>
+        <SectionContainer>
+          <AboutMe />
+        </SectionContainer>
+      </div>
+    </>
+  )
+}
+
+export default App
