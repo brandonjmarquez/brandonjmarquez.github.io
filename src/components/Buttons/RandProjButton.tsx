@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ProjectsJSON from "../json/projects.json";
+import ProjectsJSON from "../../json/projects.json";
 
 const RandProjButton = () => {
   useEffect(() => {})

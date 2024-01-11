@@ -4,8 +4,8 @@ import './App.css';
 import AboutMe from './tabs/AboutMe';
 import Projects from './tabs/Projects';
 import Resume from './tabs/Resume';
-import SectionContainer from './components/SectionContainer';
-import SectionNavigator from './components/SectionNavigator';
+import SectionContainer from './components/Containers/SectionContainer';
+import SectionNavigator from './components/Navigation/SectionNavigator';
 
 function App() {
   const navigate = useNavigate();

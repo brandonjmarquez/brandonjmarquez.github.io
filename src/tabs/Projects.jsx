@@ -1,4 +1,4 @@
-import ProjectContainer from "../components/ProjectContainer";
+import ProjectContainer from "../components/Containers/ProjectContainer";
 import ProjectsJSON from "../json/projects.json";
 
 function Projects() {

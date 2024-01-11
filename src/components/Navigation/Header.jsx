@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import HeaderButton from "./HeaderButtons";
+import HeaderButton from "../Buttons/HeaderButtons";
 
 function Header(props) {
   return (

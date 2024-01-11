@@ -1,4 +1,4 @@
-import RandProjButton from "../components/RandProjButton";
+import RandProjButton from "../components/Buttons/RandProjButton";
 import { FaLinkedin } from "react-icons/fa";
 
 const AboutMe = (props) => {
