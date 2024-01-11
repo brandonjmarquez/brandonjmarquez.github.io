@@ -7,6 +7,11 @@ const SectionNavigator = (props) => {
   const slideSpeed = 150;
   const [currentPage, setCurrentPage] = useState(props.tab);
 
+  useEffect(() => {
+    console.log("currentPage: " + currentPage);
+    console.log("props.tab: " + props.tab);
+  }, [currentPage, props.tab]);
+
   // Adds classes to the section container to animate the page moving left or right.
   useEffect(() => {
     const sectionContainer = document.getElementById("section-container");
@@ -17,6 +22,11 @@ const SectionNavigator = (props) => {
       props.setTab("/resume");
     } else {
       props.setTab(currentPage);
+    }
+
+    // If the current page is the projects page, it removes the hidden class from the projects.
+    if(currentPage === "/projects") {
+      sectionContainer.querySelector("#projects").classList.remove("hidden");
     }
 
     // Removes the classes that animate the page moving left or right, and adds a class to keep the
@@ -37,6 +47,13 @@ const SectionNavigator = (props) => {
         setCurrentPage("/resume");
       } else {
         sectionContainer.classList.add("translate-x-[-" + pageOrder.indexOf(currentPage) + "00vw]");
+      }
+
+      // If the current page is not the projects page, it adds the hidden class to the projects.
+      // This is done because the height of the projects page causes all other pages to be more scrollable
+      // than they should be.
+      if(currentPage !== "/projects") {
+        sectionContainer.querySelector("#projects").classList.add("hidden");
       }
     }, slideSpeed);
   }, [currentPage]);

@@ -10,6 +10,7 @@ import SectionNavigator from './components/SectionNavigator';
 function App() {
   const navigate = useNavigate();
   const [tab, setTab] = useState(location.pathname);
+  const [pageHeight, setPageHeight] = useState(0);
 
   useEffect(() => {
     const sectionContainer = document.getElementById("section-container");
@@ -28,19 +29,17 @@ function App() {
     if(tab === "/") setTab("/about-me");
   }, [tab, navigate]);
 
-  // useEffect(() => {
-  //   const sectionContainer = document.getElementById("section-container");
-  //   if(tab === "/projects") {
-  //     sectionContainer.classList.remove("h-max");
-  //   } else {
-  //     sectionContainer.classList.add("h-[600px]");
-  //   }
-  // }, [tab]);
-
   return (
     <>
+      {/* <style>
+        {
+          `body {
+            height: ${pageHeight}px;
+          }`
+        }
+      </style> */}
       <SectionNavigator tab={tab} setTab={setTab} />
-      <div id="section-container" className="flex flex-row justify-center align-middle w-max h-max translate-x-[-100vw] overflow-scroll">
+      <div id="section-container" className="flex flex-row justify-center align-middle w-max h-max mt-[5%] translate-x-[-100vw] overflow-scroll">
         <SectionContainer>
           <Resume isCopy={true} />
         </SectionContainer>
