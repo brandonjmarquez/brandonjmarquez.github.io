@@ -4,15 +4,12 @@ import Header from './Header';
 
 const SectionNavigator = (props) => {
   const pageOrder = ["/resume-cp", "/about-me", "/projects", "/resume", "/about-me-cp"];
-  const slideSpeed = 150;
+  const slideSpeed = 250;
   const [currentPage, setCurrentPage] = useState(props.tab);
 
-  useEffect(() => {
-    console.log("currentPage: " + currentPage);
-    console.log("props.tab: " + props.tab);
-  }, [currentPage, props.tab]);
-
-  // Adds classes to the section container to animate the page moving left or right.
+  /*
+    Adds classes to the section container to animate the page moving left or right.
+  */
   useEffect(() => {
     const sectionContainer = document.getElementById("section-container");
 
@@ -24,13 +21,17 @@ const SectionNavigator = (props) => {
       props.setTab(currentPage);
     }
 
-    // If the current page is the projects page, it removes the hidden class from the projects.
+    /*
+      If the current page is the projects page, it removes the hidden class from the projects.
+    */
     if(currentPage === "/projects") {
       sectionContainer.querySelector("#projects").classList.remove("hidden");
     }
 
-    // Removes the classes that animate the page moving left or right, and adds a class to keep the
-    // page in place after the animation is completed.
+    /*
+      Removes the classes that animate the page moving left or right, and adds a class to keep the
+      page in place after the animation is completed. 
+    */
     setTimeout(() => {
       sectionContainer.classList.remove("slide-left");
       sectionContainer.classList.remove("slide-right");
@@ -49,17 +50,21 @@ const SectionNavigator = (props) => {
         sectionContainer.classList.add("translate-x-[-" + pageOrder.indexOf(currentPage) + "00vw]");
       }
 
-      // If the current page is not the projects page, it adds the hidden class to the projects.
-      // This is done because the height of the projects page causes all other pages to be more scrollable
-      // than they should be.
+      /*
+        If the current page is not the projects page, it adds the hidden class to the projects.
+        This is done because the height of the projects page causes all other pages to be more scrollable
+        than they should be.
+      */
       if(currentPage !== "/projects") {
         sectionContainer.querySelector("#projects").classList.add("hidden");
       }
     }, slideSpeed);
   }, [currentPage]);
 
-  // Adds the animation classes to the section container to move the page to the left, and sets
-  // currentPage to the new page.
+  /* 
+    Adds the animation classes to the section container to move the page to the left, and sets
+    currentPage to the new page.
+  */
   const handleLeftMove = () => {
     const sectionContainer = document.getElementById("section-container");
     sectionContainer.classList.add("slide-left");
@@ -70,8 +75,10 @@ const SectionNavigator = (props) => {
     }
   };
 
-  // Adds the animation classes to the section container to move the page to the right, and sets
-  // currentPage to the new page.
+  /*
+    Adds the animation classes to the section container to move the page to the right, and sets
+    currentPage to the new page.
+  */
   const handleRightMove = () => {
     const sectionContainer = document.getElementById("section-container");
     sectionContainer.classList.add("slide-right");

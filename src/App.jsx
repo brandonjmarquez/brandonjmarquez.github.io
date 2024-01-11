@@ -31,13 +31,6 @@ function App() {
 
   return (
     <>
-      {/* <style>
-        {
-          `body {
-            height: ${pageHeight}px;
-          }`
-        }
-      </style> */}
       <SectionNavigator tab={tab} setTab={setTab} />
       <div id="section-container" className="flex flex-row justify-center align-middle w-max h-max mt-[5%] translate-x-[-100vw] overflow-scroll">
         <SectionContainer>
