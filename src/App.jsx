@@ -10,7 +10,6 @@ import SectionNavigator from './components/SectionNavigator';
 function App() {
   const navigate = useNavigate();
   const [tab, setTab] = useState(location.pathname);
-  const [pageHeight, setPageHeight] = useState(0);
 
   useEffect(() => {
     const sectionContainer = document.getElementById("section-container");
