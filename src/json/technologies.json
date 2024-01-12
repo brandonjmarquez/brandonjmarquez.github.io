@@ -1,0 +1,41 @@
+[
+  {
+    "name": "c-plus-plus"
+  },
+  {
+    "name": "html5"
+  },
+  {
+    "name": "css3"
+  },
+  {
+    "name": "tailwindcss"
+  },
+  {
+    "name": "javascript"
+  },
+  {
+    "name": "typescript"
+  },
+  {
+    "name": "react-js"
+  },
+  {
+    "name": "node-js"
+  },
+  {
+    "name": "express-js"
+  },
+  {
+    "name": "mysql"
+  },
+  {
+    "name": "mongodb"
+  },
+  {
+    "name": "strapi"
+  },
+  {
+    "name": "python"
+  }
+]
