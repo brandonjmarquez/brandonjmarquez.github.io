@@ -1,7 +1,7 @@
 [
   {
     "name": "Recordable Piano Instrument",
-    "description": "This is an in browser piano instrument that can be played and recorded with a computer keyboard. It is made using TypeScript and React.js. Recordings can be exported and used in any modern DAW.",
+    "description": "This is an in browser piano instrument that can be played and recorded with a computer keyboard. It is made using TypeScript and React.js.",
     "imgSrc": "/projects/piano.png",
     "href": "https://piano-roll.vercel.app",
     "github": "https://github.com/brandonjmarquez/piano-roll"
