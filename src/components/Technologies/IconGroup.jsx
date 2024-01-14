@@ -8,8 +8,8 @@ const IconGroup = (props) => {
 
   return (
     <>
-      <div className="flex items-center flex-col">
-        <div className="carousel w-full overflow-x-scroll overflow-y-hidden whitespace-nowrap scrollbar-hide" onScroll={(e) => handleScroll(e)}>
+      <div className="flex items-center flex-col mb-7">
+        <div className="carousel w-full overflow-x-scroll overflow-y-hidden whitespace-nowrap scrollbar-hide">
           <div className="carousel-content">
             {TechnologiesJSON.map((item, i) => 
               <Icon key={i} className='carousel-item' item={item} />
