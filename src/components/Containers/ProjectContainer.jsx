@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectContainer = (props) => {
 
   return (
-    <div className="project-container mx-[1em]">
+    <div className="project-container mx-[1em] my-4">
       {(props.project.href.length > 0) ? 
       <div className="h-max">
         <a href={props.project.href} target="_blank" className="proj-link">
