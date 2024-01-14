@@ -21,7 +21,7 @@ const AboutMe = (props) => {
         </div>
       </div>
       <div className="flex sm:flex-row flex-col mx-auto my-7 relative align-middle">
-        <div className="h-max text-left mr-7">
+        <div className="self-center h-max text-left sm:mr-7">
           <img src="/me/me.png" width="6em" className="max-w-[300px] max-h-[300px] w-full object-cover rounded-md" loading="lazy"
             srcSet="/me/me-150.png 150w,
                     /me/me-275.png 275w,
