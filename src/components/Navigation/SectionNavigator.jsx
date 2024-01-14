@@ -22,10 +22,18 @@ const SectionNavigator = (props) => {
     }
 
     /*
-      If the current page is the projects page, it removes the hidden class from the projects.
+      Removes the hidden class from the current page.
     */
+    if(currentPage === "/about-me" || currentPage === "/about-me-cp") {
+      sectionContainer.querySelector("#about-me").classList.remove("hidden");
+      sectionContainer.querySelector("#about-me-cp").classList.remove("hidden");
+    }
     if(currentPage === "/projects") {
       sectionContainer.querySelector("#projects").classList.remove("hidden");
+    }
+    if(currentPage === "/resume" || currentPage === "/resume-cp") {
+      sectionContainer.querySelector("#resume").classList.remove("hidden");
+      sectionContainer.querySelector("#resume-cp").classList.remove("hidden");
     }
 
     /*
@@ -51,12 +59,18 @@ const SectionNavigator = (props) => {
       }
 
       /*
-        If the current page is not the projects page, it adds the hidden class to the projects.
-        This is done because the height of the projects page causes all other pages to be more scrollable
-        than they should be.
+        Adds the hidden class to all pages except the current page. This is done because the height 
+        of the projects page causes all other pages to be more scrollable than they should be.
       */
+
+      if(currentPage !== "/about-me") {
+        sectionContainer.querySelector("#about-me").classList.add("hidden");
+      }
       if(currentPage !== "/projects") {
         sectionContainer.querySelector("#projects").classList.add("hidden");
+      }
+      if(currentPage !== "/resume") {
+        sectionContainer.querySelector("#resume").classList.add("hidden");
       }
     }, slideSpeed);
   }, [currentPage]);
