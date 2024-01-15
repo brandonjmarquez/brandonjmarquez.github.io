@@ -46,11 +46,11 @@ body {
   min-height: 100vh;
   background-color: rgb(var(--color-custom-100));
 
-  --color-custom-100: 49, 49, 49;
-  --color-custom-200: 158, 125, 125;
+  --color-custom-100: 70, 70, 85;
+  --color-custom-201: 208, 214, 181;
+  --color-custom-200: 130, 9, 51;
   --color-custom-300: 238, 113, 133;
-  --color-custom-400: 69, 187, 158;
-  --color-custom-500: 255, 255, 255;
+  --color-custom-400: 117, 185, 190;
 }
 
 h1 {
