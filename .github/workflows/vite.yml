@@ -42,7 +42,7 @@ jobs:
         env:
           VITE_RESUME_EMBED: https://docs.google.com/document/d/e/2PACX-1vR8ZK9XYdhgs_5itH9oLUAfcj7aLYF5Pu_FnXy-lzyUMRxFX3Ej0d3aYrf-XDN0wu8pvZ_P2_evtlWH/pub?embedded=true
           VITE_RESUME_URL: https://docs.google.com/document/d/1op-vHQPsjwo0lSocbo-WvGVJJ6acpt-A-xvTxt-7ZZA/edit?usp=sharing
-          VITE_PUBLIC: public
+          VITE_PUBLIC: 
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
