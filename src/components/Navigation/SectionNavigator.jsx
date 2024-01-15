@@ -79,14 +79,16 @@ const SectionNavigator = (props) => {
       setDirection("");
       if(pageOrder.indexOf(currentPage) === pageOrder.length - 1) {
         // sectionContainer.classList.add("translate-x-page-" + pageOrder.length - 1); // Doesn't work for some reason.
-        sectionContainer.classList.add("translate-x-[-" + (pageOrder.length - 1) + "00vw]");
+        // sectionContainer.classList.add("translate-x-[-" + (pageOrder.length - 1) + "00vw]"); // Doesn't work for in Safari for some reason.
+        sectionContainer.style.transform = "translateX(-" + (pageOrder.length - 1) + "00vw)";
         setCurrentPage(pageOrder[1]);
         props.setTab(pageOrder[1]);
         // sectionContainer.classList.remove("translate-x-page-" + (pageOrder.length - 2));
         setTimeout(() => {
           sectionContainer.classList.add("transition-none");
           sectionContainer.classList.add("translate-x-page-1");
-          sectionContainer.classList.remove("translate-x-[-" + (pageOrder.length - 1) + "00vw]");
+          // sectionContainer.classList.remove("translate-x-[-" + (pageOrder.length - 1) + "00vw]");
+          sectionContainer.style.transform = "";
         }, slideSpeed);
       } else {
         sectionContainer.classList.remove("translate-x-page-" + (pageOrder.indexOf(currentPage) - 1));
