@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef } from "react";
 import { SiCplusplus } from "react-icons/si";
 import TechnologiesJSON from "../../json/technologies.json";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import Icon from "./icon";
+import Icon from "./Icon";
 
 const IconGroup = (props) => {
 
