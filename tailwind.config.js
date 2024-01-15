@@ -56,6 +56,13 @@ export default {
       animation: {
         'roulette': 'roulette .4s linear infinite',
       },
+      translate: {
+        'page-0': '0',
+        'page-1': '-100vw',
+        'page-2': '-200vw',
+        'page-3': '-300vw',
+        'page-4': '-400vw',
+      },
     },
   },
   plugins: [],
