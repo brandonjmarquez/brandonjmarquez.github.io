@@ -6,7 +6,7 @@ import SoundCloudEmbed from "../components/SoundCloudEmbed";
 const AboutMe = (props) => {
   return (
     <section id={(props.isCopy) ? "about-me-cp" : "about-me"} className="flex flex-col w-full hidden">
-      <div className="flex flex-col bg-custom-100">
+      <div className="flex flex-col bg-custom-100 pt-4">
         <div className="">
           <h1 className="text-3xl font-bold">Welcome!<br></br>My name is Brandon.</h1>
           {"\n"}
