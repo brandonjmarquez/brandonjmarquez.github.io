@@ -22,3 +22,33 @@ a#cutest-cat-ever:hover span {
   background-color: transparent;
   transition-duration: 700ms;
 }
+
+/* .header-container:has(.header-button:hover)
+.current-page:not(:hover)::before {
+  background-color: rgba(var(--color-custom-400), .5);
+  transform: scaleX(300) scaleY(300);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 700ms;
+}
+
+.current-page::before {
+  background-color: rgba(var(--color-custom-400), .5);
+  transform: scaleX(300) scaleY(300);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+  z-index: 20;
+}
+
+
+
+.header-button::after {
+  background-color: rgb(var(--color-custom-400));
+  transform: scaleX(1) scaleY(1);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 700ms;
+} */
