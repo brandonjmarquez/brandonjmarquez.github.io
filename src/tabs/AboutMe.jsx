@@ -34,7 +34,7 @@ const AboutMe = (props) => {
           <ul>
             <li className="list-disc text-start">I will be graduating in December 2025 from Texas State University with an Bachelors Degree in Computer Science.</li>
             <li className="list-disc text-start">I have a <strong>strong</strong> passion for coding, music production, and my
-              <a id="cutest-cat-ever" href="/suzie.jpg" target="_blank" className="relative"> cat
+              <a id="cutest-cat-ever" href={`${import.meta.env.VITE_PUBLIC}/suzie.jpg`} target="_blank" className="relative"> cat
                 <span className="absolute hidden z-50">
                   <img className="border-r-8 border-none" src="/suzie.jpg" alt="cutest cat ever" height="300" />
                 </span>
