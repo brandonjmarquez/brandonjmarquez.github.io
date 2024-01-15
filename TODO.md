@@ -2,10 +2,10 @@
 
 ### TODO
 - [ ] Animate project containers on hover.  
-- [ ] Animate buttons better.  
-- [ ] Add an infinite carousel of all the technologies I know.  
 - [ ] chatbot?  
-- [ ] Edit metadata
 
 ### Completed
 - [x] Embed soundcloud playlist into about me page.  
+- [x] Add a carousel of all the technologies I know.  
+- [x] Animate buttons better.  
+- [x] Edit metadata  
