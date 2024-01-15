@@ -75,15 +75,14 @@ const SectionNavigator = (props) => {
         sectionContainer.classList.add("translate-x-page-" + pageOrder.indexOf(currentPage));
         props.setTab(pageOrder[pageOrder.indexOf(currentPage)]);
       }
-      sectionContainer.classList.remove("transition-none");
     } else if(direction === "right") {
       setDirection("");
       if(pageOrder.indexOf(currentPage) === pageOrder.length - 1) {
         // sectionContainer.classList.add("translate-x-page-" + pageOrder.length - 1); // Doesn't work for some reason.
-        sectionContainer.classList.remove("translate-x-page-" + (pageOrder.length - 2));
         sectionContainer.classList.add("translate-x-[-" + (pageOrder.length - 1) + "00vw]");
         setCurrentPage(pageOrder[1]);
         props.setTab(pageOrder[1]);
+        // sectionContainer.classList.remove("translate-x-page-" + (pageOrder.length - 2));
         setTimeout(() => {
           sectionContainer.classList.add("transition-none");
           sectionContainer.classList.add("translate-x-page-1");
