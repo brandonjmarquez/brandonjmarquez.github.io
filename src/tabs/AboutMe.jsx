@@ -1,17 +1,17 @@
-import RandProjButton from "../components/Buttons/RandProjButton";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import RandProjButton from "../components/Buttons/RandProjButton";
 import IconGroup from "../components/Technologies/IconGroup";
 import SoundCloudEmbed from "../components/SoundCloudEmbed";
 
 const AboutMe = (props) => {
   return (
     <section id={(props.isCopy) ? "about-me-cp" : "about-me"} className="flex flex-col w-full hidden">
-      <div className="flex flex-col">
-        <div className="left-header">
+      <div className="flex flex-col bg-custom-100">
+        <div className="">
           <h1 className="text-3xl font-bold">Welcome!<br></br>My name is Brandon.</h1>
           {"\n"}
         </div>
-        <div className="right-header flex flex-col justify-center">
+        <div className="flex flex-col justify-center">
           <p className="subtext">I am a student at Texas State University pursuing a degree in computer science with a minor in applied mathematics.</p>
           <p className="m-auto text-3xl">
             <a href="https://www.linkedin.com/in/brandmarque/" target="_blank"><FaLinkedin className="inline-block m-4" /></a>
@@ -29,7 +29,7 @@ const AboutMe = (props) => {
                     /me/me.png 536w"
           ></img>
         </div>
-        <div className="h-max">
+        <div className="h-max -z-20">
           <p className="text-start text-xl font-bold">Some facts about me:</p>
           <ul>
             <li className="list-disc text-start">I will be graduating in December 2025 from Texas State University with an Bachelors Degree in Computer Science.</li>

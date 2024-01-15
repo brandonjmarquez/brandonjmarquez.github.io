@@ -52,7 +52,10 @@ export default {
             return `rgb(var(--color-custom-400))`;
           },
         }
-      }
+      },
+      animation: {
+        'roulette': 'roulette .4s linear infinite',
+      },
     },
   },
   plugins: [],
