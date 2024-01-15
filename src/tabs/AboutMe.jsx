@@ -22,11 +22,11 @@ const AboutMe = (props) => {
       </div>
       <div className="flex sm:flex-row flex-col mx-auto my-7 relative align-middle">
         <div className="self-center h-max text-left sm:mr-7">
-          <img src="/me/me.png" width="6em" className="max-w-[300px] max-h-[300px] w-full object-cover rounded-md" loading="lazy"
-            srcSet="/me/me-150.png 150w,
-                    /me/me-275.png 275w,
-                    /me/me-400.png 400w,
-                    /me/me.png 536w"
+          <img src={`${import.meta.env.VITE_PUBLIC}/me/me.png`} width="6em" className="max-w-[300px] max-h-[300px] w-full object-cover rounded-md" loading="lazy"
+            srcSet={`${import.meta.env.VITE_PUBLIC}/me/me-150.png 150w,
+                     ${import.meta.env.VITE_PUBLIC}/me/me-275.png 275w,
+                     ${import.meta.env.VITE_PUBLIC}/me/me-400.png 400w,
+                     ${import.meta.env.VITE_PUBLIC}/me/me.png 536w`}
           ></img>
         </div>
         <div className="h-max -z-20">

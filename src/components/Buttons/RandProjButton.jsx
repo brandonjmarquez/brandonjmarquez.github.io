@@ -39,7 +39,7 @@ const RandProjButton = () => {
         <div id="smk-roulette-border" className="lg:block hidden my-3 peer-has-[:hover]:translate-y-full peer-has-[:hover]:-z-10 absolute -z-10 top-[0.65rem] transition-all duration-700
             after:absolute after:bg-custom-100 after:h-full after:w-full after:top-0 after:left-0 after:-z-20 after:animate-roulette after:bg-contain after:bg-center"
         >
-          <img src="/smk-roulette.png" alt="mario kart roulette" className="mx-auto z-10"/>
+          <img src={`${import.meta.env.VITE_PUBLIC}/smk-roulette.png`} alt="mario kart roulette" className="mx-auto z-10"/>
         </div>
       </div>
     </>

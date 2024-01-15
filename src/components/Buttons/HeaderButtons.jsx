@@ -32,11 +32,8 @@ function HeaderButton(props) {
       className={`
         header-button sm:[px-5 py-4] px-3 py-2 z-30 bg-custom-300 rounded-full text-white relative font-semibold font-sans overflow-hidden 
         after:-z-20 after:absolute after:h-1 after:w-1 after:bg-custom-400 after:left-5 after:bottom-0 
-        before:-z-20 before:absolute before:h-1 before:w-1 before:left-5 before:bottom-0 before:scale-[300] 
         after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 
         after:transition-all after:duration-475 
-        before:translate-y-full before:rounded-md before:hover:scale-[1] before:hover:transition-all before:hover:duration-700 
-        before:transition-all before:duration-475 
         transition-all duration-700 ${(isCurrentPage) ? "bg-custom-400 current-page" : "bg-custom-300"} 
       `}
       onClick={handleClick}

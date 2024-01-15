@@ -10,6 +10,5 @@ export default defineConfig({
       plugins: [tailwindcss()],
     }
   },
-  base: '/portfolio/',
-
+  base: '/',
 })

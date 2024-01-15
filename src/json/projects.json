@@ -2,35 +2,35 @@
   {
     "name": "Recordable Piano Instrument",
     "description": "This is an in browser piano instrument that can be played and recorded with a computer keyboard. It is made using TypeScript and React.js.",
-    "imgSrc": "/projects/piano.png",
+    "imgSrc": "projects/piano.png",
     "href": "https://piano-roll.vercel.app",
     "github": "https://github.com/brandonjmarquez/piano-roll"
   },
   {
     "name": "This Website",
     "description": "My website, made with TypeScript and React.js.",
-    "imgSrc": "/projects/website.png",
+    "imgSrc": "projects/website.png",
     "href": "https://brandonjmarquez.github.io/Website",
     "github": "https://github.com/brandonjmarquez/Website"
   },
   {
     "name": "Car Dealership Website",
     "description": "A mock car dealership website. Made with TypeScript and React.js. Styled with TalwindCSS and Emotion.",
-    "imgSrc": "/projects/car-dealership.png",
+    "imgSrc": "projects/car-dealership.png",
     "href": "https://car-dealership-woad.vercel.app",
     "github": "https://github.com/brandonjmarquez/car-dealership"
   },
   {
     "name": "Blab Times Blog",
     "description": "A blog I made for my girlfriend! Made with TypeScript, React.js, Astro, Strapi, and TalwindCSS.",
-    "imgSrc": "/projects/blab-times.png",
+    "imgSrc": "projects/blab-times.png",
     "href": "https://blab-times.vercel.app/",
     "github": "https://github.com/brandonjmarquez/blab-times"
   },
   {
     "name": "TBD",
     "description": "My next project... Who knows what it may be...",
-    "imgSrc": "/projects/black.png",
+    "imgSrc": "projects/black.png",
     "href": "",
     "github": ""
   }
