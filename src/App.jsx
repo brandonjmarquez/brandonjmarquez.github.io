@@ -9,26 +9,21 @@ import SectionNavigator from './components/Navigation/SectionNavigator';
 
 function App() {
   const navigate = useNavigate();
-  const [tab, setTab] = useState(location.hash.replace("#", "/"));
+  const [tab, setTab] = useState((location.hash === "") ? "/about-me" : location.hash.replace("#", "/"));
 
   useEffect(() => {
     const sectionContainer = document.getElementById("section-container");
-    if(location.hash === "#about-me") {
+    if(tab === "/about-me") {
       sectionContainer.classList.add("translate-x-page-1");
-    } else if(location.hash === "#projects") {
+    } else if(tab === "/projects") {
       sectionContainer.classList.add("translate-x-page-2");
-    } else if(location.hash === "#resume") {
+    } else if(tab === "/resume") {
       sectionContainer.classList.add("translate-x-page-3");
     }
-    console.log(location.hash);
   }, []);
   
   useEffect(() => {
     navigate(tab.replace("/", "#"));
-    // location.hash = tab.replace("/", "#");
-
-    if(tab === "") setTab("/about-me");
-  // }, [tab]);
   }, [tab, navigate]);
 
   return (
