@@ -11,7 +11,7 @@ const SectionNavigator = (props) => {
 
   useEffect(() => {
     const sectionContainer = document.getElementById("section-container");
-    clearTimeout(isDisabled.timeout);
+    clearTimeout(isDisabled.timeout); // Clears the timeout that reenables the arrow buttons. This prevents the user from spamming the buttons.
     /*
       Removes the hidden class from the current page.
     */
@@ -158,6 +158,7 @@ const SectionNavigator = (props) => {
   return (
     <>
       <Header pageOrder={pageOrder} currentPage={currentPage} tab={props.tab} setTab={props.setTab} handleLeftMove={handleLeftMove} handleRightMove={handleRightMove} />
+      <div className="pb-6"><br/></div>
       <ArrowNavs currentPage={currentPage} tab={props.tab} isDisabled={isDisabled} setTab={props.setTab} handleLeftMove={handleLeftMove} handleRightMove={handleRightMove} />
     </>
   );
