@@ -32,11 +32,11 @@ const RandProjButton = () => {
           }
         `}
       </style>
-      <div className="justify-center left-0 right-0 mx-auto">
+      <div className="peer justify-center mx-auto bg-custom-100">
         <button type="button" className="peer self-center w-max sm:[px-4 py-3] px-2 py-1 rounded-full bg-custom-300 z-40" onClick={selProjLink}>
           <p className="mx-2 z-40">Go to a random project of mine!</p>
         </button>
-        <div id="smk-roulette-border" className="lg:block hidden peer-has-[:hover]:translate-y-full peer-has-[:hover]:-z-10 absolute -z-10 top-2 transition-all duration-700
+        <div id="smk-roulette-border" className="lg:block hidden peer-has-[:hover]:translate-y-60 peer-has-[:hover]:-z-10 absolute -z-10 top-[0%] transition-all duration-700
             after:absolute after:bg-custom-100 after:h-full after:w-full after:top-0 after:left-0 after:-z-20 after:animate-roulette after:bg-contain after:bg-center"
         >
           <img src={`${import.meta.env.VITE_PUBLIC}/smk-roulette.png`} alt="mario kart roulette" className="mx-auto z-10"/>
